@@ -1,0 +1,158 @@
+:root {
+  --bg: #f8f2df;
+  --card: #fff9ea;
+  --text: #2b241f;
+  --brand: #d53a1e;
+  --brand-dark: #ad2f19;
+  --accent: #0f9d58;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.container {
+  width: min(1080px, 92vw);
+  margin-inline: auto;
+}
+
+.hero {
+  padding: 48px 0 28px;
+  background: linear-gradient(180deg, #f4ead2 0%, var(--bg) 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.kicker {
+  margin: 0;
+  font-weight: 700;
+  color: #8c6d34;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.subtitle {
+  margin: 0;
+  max-width: 60ch;
+}
+
+.hero-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn.primary {
+  color: #fff;
+  background: var(--brand);
+}
+
+.btn.primary:hover {
+  background: var(--brand-dark);
+}
+
+.btn.ghost {
+  color: var(--brand);
+  border: 1px solid var(--brand);
+}
+
+.section {
+  margin-block: 28px;
+}
+
+.section h2 {
+  margin-bottom: 12px;
+}
+
+.intro-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 12px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 14px;
+  align-items: center;
+}
+
+.gallery {
+  display: grid;
+  gap: 14px;
+}
+
+.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.three-col {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.one-col {
+  grid-template-columns: 1fr;
+}
+
+.card {
+  margin: 0;
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.wa-float {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+
+.footer {
+  padding: 36px 0 90px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 840px) {
+  .intro-card {
+    grid-template-columns: 1fr 1fr;
+    padding: 16px;
+  }
+}

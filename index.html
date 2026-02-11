@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ina Cookies Catalog</title>
+    <meta
+      name="description"
+      content="Katalog Ina Cookies - Gold, Jar, Kombinasi, Signature, Hamper, dan Gift Box."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <p class="kicker">Ina Cookies</p>
+        <h1>Katalog Produk</h1>
+        <p class="subtitle">Catalog ringan untuk GitHub Pages. Scroll untuk lihat semua kategori.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#katalog">Lihat Katalog</a>
+          <a class="btn ghost" id="waHero" target="_blank" rel="noopener">Chat WhatsApp</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="katalog" class="container">
+      <section class="section intro-card">
+        <img src="assets/01-cover.svg" alt="Cover Ina Cookies" loading="lazy" />
+        <div>
+          <h2>Produk Pilihan</h2>
+          <p>
+            Semua gambar di bawah disusun sesuai materi katalog yang Anda kirim: manis, asin,
+            cokelat, kombinasi, signature, gable box, dan hampers.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Gold & Jar</h2>
+        <div class="gallery two-col">
+          <figure class="card"><img src="assets/02-manis-asin.svg" alt="Katalog manis dan asin" loading="lazy" /></figure>
+          <figure class="card"><img src="assets/03-cokelat-gold-jar.svg" alt="Katalog cokelat, healty, fruity" loading="lazy" /></figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Kombinasi & Signature</h2>
+        <div class="gallery two-col">
+          <figure class="card"><img src="assets/04-kombinasi.svg" alt="Paket kombinasi Ina Cookies" loading="lazy" /></figure>
+          <figure class="card"><img src="assets/05-signature.svg" alt="Ina Cookies Signature" loading="lazy" /></figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Hampers & Gable Box</h2>
+        <div class="gallery three-col">
+          <figure class="card"><img src="assets/06-hampers.svg" alt="Katalog hampers classic dan thematic" loading="lazy" /></figure>
+          <figure class="card"><img src="assets/07-gable-box.svg" alt="Katalog gable box" loading="lazy" /></figure>
+          <figure class="card"><img src="assets/08-hampers-addons.svg" alt="Pilihan tambahan hampers" loading="lazy" /></figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Menu Tambahan</h2>
+        <div class="gallery one-col">
+          <figure class="card"><img src="assets/09-menu-cookies.svg" alt="Menu cookies tambahan" loading="lazy" /></figure>
+        </div>
+      </section>
+    </main>
+
+    <a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Pesan via WhatsApp">
+      <span>Pesan via WhatsApp</span>
+    </a>
+
+    <footer class="footer">
+      <div class="container">
+        <small>© <span id="year"></span> Ina Cookies Catalog.</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
